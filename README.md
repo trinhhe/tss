@@ -24,9 +24,11 @@ pip install git+https://github.com/trinhhe/tss@<RELEASE>
 
 ## Development
 
-First install [`rye`](https://rye.astral.sh/) and call
+First install [`rye`](https://rye.astral.sh/) and [`uv`](https://pypi.org/project/uv/) then call
 ```shell
 rye sync
+source .venv/bin/activate
+uv pip install mamba-ssm --no-build-isolation
 ```
 
 You can then add/remove dependencies using
